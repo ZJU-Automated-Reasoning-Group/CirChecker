@@ -1,0 +1,38 @@
+[project]
+name = "circheck"
+version = "0.2.0"
+description = "Static analysis tool to detect ZKP vulnerabilities in Circom circuits."
+authors = [{ name="Dang Duong Minh Nhat", email="dangduongminhnhat2003@gmail.com" }]
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["circom", "static-analysis", "zkp", "vulnerability", "security", "tool"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "Topic :: Software Development :: Static Analysis"
+]
+dependencies = [
+    "antlr4-python3-runtime==4.9.2",
+    "colorama==0.4.6",
+    "tqdm==4.67.1"
+]
+urls = { 
+    "Homepage" = "https://github.com/dangduongminhnhat/Circheck",
+    "Repository" = "https://github.com/dangduongminhnhat/Circheck"
+}
+
+[project.scripts]
+circheck = "circheck.cli:main"
+
+[tool.setuptools]
+packages = ["circheck"]
+package-dir = {"" = "src"}
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
