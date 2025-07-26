@@ -2,6 +2,7 @@
 
 A static analysis tool for Circom source code, designed to detect security vulnerabilities in Zero-Knowledge Proof (ZKP) circuits written in the Circom language. This tool helps developers and users ensure the security and integrity of their ZKP projects by analyzing the source code and identifying potential issues during circuit design.
 
+
 ## Features
 
 Circheck detects a variety of potential issues in Circom circuits, including:
@@ -21,20 +22,17 @@ Circheck detects a variety of potential issues in Circom circuits, including:
 To install Circheck, you can clone the repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/dangduongminhnhat/Circheck.git
-cd Circheck
+git clone https://github.com/ZJU-Automated-Reasoning-Group/CirChecker
+cd CirChecker
 pip install -r requirements.txt
 ```
 
-or you can install Circheck via pip, use the following command:
+It is better to use a venv.
 
-```bash
-pip install circheck
-```
 
 ## Usage
 
-Circheck is a static analysis tool designed to detect ZKP vulnerabilities in Circom circuits. You can use it via the command line interface (CLI) to analyze Circom code and generate reports.
+You can use it via the command line interface (CLI) to analyze Circom code and generate reports.
 
 ### Command Line Arguments
 
@@ -134,6 +132,6 @@ The JSON file will contain detailed information about the analysis, including de
 }
 ```
 
-## License
+## Ack
 
-Licensed under the [MIT License](LICENSE) © 2025 Dang Duong Minh Nhat.
+Based on https://github.com/dangduongminhnhat/Circheck
